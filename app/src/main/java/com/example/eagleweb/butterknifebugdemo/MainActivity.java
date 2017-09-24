@@ -2,6 +2,7 @@ package com.example.eagleweb.butterknifebugdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mTvButterknife;
     @BindView(R.id.tv_other)
     TextView mTvOther;
+    private int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +31,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "this is other click event", Toast.LENGTH_SHORT).show();
+                mTvButterknife.setText(mTvButterknife.getText() + "  " + ++count);
             }
         });
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, "delay message execute success", Toast.LENGTH_SHORT).show();
+            }
+        }, 10000);
+
     }
 
     public void gotoCustom(View view) {

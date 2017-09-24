@@ -2,11 +2,10 @@ package com.example.eagleweb.butterknifebugdemo;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.view.View;
+import android.widget.TextView;
 
 /**
  * @创建者 帅子
@@ -14,7 +13,7 @@ import android.view.View;
  * @描述
  */
 
-public class CustomView extends View {
+public class CustomView extends TextView {
     public CustomView(Context context) {
         this(context, null);
     }
@@ -35,7 +34,7 @@ public class CustomView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.RED);
+        //        canvas.drawColor(Color.RED);
     }
 
     public void onDestory() {
