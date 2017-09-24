@@ -1,4 +1,4 @@
-package com.example.eagleweb.butterknifefixlibrary.butterknife;
+package butterknife;
 
 import android.support.annotation.UiThread;
 

@@ -1,4 +1,4 @@
-package com.example.eagleweb.butterknifefixlibrary.butterknife.internal;
+package butterknife.internal;
 
 import android.content.Context;
 import android.content.res.Resources;

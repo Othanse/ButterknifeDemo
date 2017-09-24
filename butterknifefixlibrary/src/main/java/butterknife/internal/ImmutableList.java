@@ -1,4 +1,4 @@
-package com.example.eagleweb.butterknifefixlibrary.butterknife.internal;
+package butterknife.internal;
 
 import java.util.AbstractList;
 import java.util.RandomAccess;

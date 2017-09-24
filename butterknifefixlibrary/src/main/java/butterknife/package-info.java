@@ -17,4 +17,4 @@
  * <li>Eliminate resource lookups by using resource annotations on fields.</li>
  * </ul>
  */
-package com.example.eagleweb.butterknifefixlibrary.butterknife;
+package butterknife;

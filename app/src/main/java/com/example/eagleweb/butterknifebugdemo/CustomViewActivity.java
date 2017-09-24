@@ -10,6 +10,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+
 public class CustomViewActivity extends AppCompatActivity {
 
     @BindView(R.id.custom)
